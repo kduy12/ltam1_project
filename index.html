@@ -42,7 +42,7 @@
                 <h3 class="text-xl font-bold mb-2">Trợ cấp Khẩn cấp</h3>
                 <p class="text-3xl font-extrabold text-accent mb-2">20.000.000 đ</p>
                 <p class="text-gray-600 text-sm leading-relaxed">
-                    <strong>Chi trả ngay lập tức (Lump-sum)</strong> khi có rủi ro xảy ra với Người được bảo hiểm. Khoản tiền này giúp gia đình ổn định cuộc sống và bù đắp thu nhập thiếu hụt trong thời gian đầu.
+                    <strong>Chi trả ngay lập tức</strong> khi Người được bảo hiểm qua đời. Khoản tiền này giúp gia đình ổn định cuộc sống và bù đắp thu nhập thiếu hụt trong thời gian đầu.
                 </p>
             </div>
             <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 text-center hover:shadow-lg transition duration-300">
@@ -241,8 +241,8 @@
                 age--;
             }
 
-            if (age < 18 || age > 60) {
-                errorMsg.textContent = `Sản phẩm hiện tại được thiết kế dành cho độ tuổi từ 18 đến 60 tuổi (Độ tuổi của bạn: ${age}).`;
+            if (age < 18 || age > 55) {
+                errorMsg.textContent = `Sản phẩm hiện tại được thiết kế dành cho độ tuổi từ 18 đến 55 tuổi (Độ tuổi của bạn: ${age}).`;
                 errorMsg.classList.remove('hidden');
                 document.getElementById('age-display').textContent = `Độ tuổi tham gia: --`;
                 document.getElementById('fee-weekly').textContent = "0 đ";
