@@ -3,152 +3,151 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bảo vệ Giáo dục cho con - Tương lai tươi sáng</title>
+    <title>An Tâm Học Vấn - Giải pháp bảo vệ tương lai cho con</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        /* Tùy chỉnh màu chủ đạo dựa trên biểu đồ R (Xanh ngọc & Cam) */
-        .bg-primary { background-color: #006666; }
-        .text-primary { color: #006666; }
-        .bg-accent { background-color: #e67e22; }
-        .text-accent { color: #e67e22; }
-        .border-primary { border-color: #006666; }
+        /* Tùy chỉnh màu sắc hướng tới khách hàng (Tin cậy & Ấm áp) */
+        .bg-primary { background-color: #0f766e; } /* Xanh ngọc đậm - Tin cậy */
+        .text-primary { color: #0f766e; }
+        .bg-secondary { background-color: #0d9488; }
+        .bg-accent { background-color: #f97316; } /* Cam sáng - Hành động */
+        .text-accent { color: #ea580c; }
+        .border-primary { border-color: #0f766e; }
     </style>
 </head>
-<body class="bg-slate-50 font-sans antialiased text-gray-800">
+<body class="bg-slate-50 font-sans antialiased text-gray-800 selection:bg-teal-200">
 
-    <header class="bg-primary text-white py-16 shadow-lg">
-        <div class="max-w-5xl mx-auto px-6 text-center">
-            <h1 class="text-4xl md:text-5xl font-bold mb-4 leading-tight">
-                Bảo vệ Tương lai, <br> <span class="text-yellow-300">Nuôi dưỡng Ước mơ cho Con</span>
+    <!-- Header / Hero Section -->
+    <header class="bg-primary text-white py-20 shadow-lg relative overflow-hidden">
+        <!-- Vòng tròn trang trí nền -->
+        <div class="absolute top-0 left-0 w-64 h-64 bg-white opacity-5 rounded-full -translate-x-1/2 -translate-y-1/2"></div>
+        <div class="absolute bottom-0 right-0 w-96 h-96 bg-white opacity-5 rounded-full translate-x-1/3 translate-y-1/3"></div>
+        
+        <div class="max-w-5xl mx-auto px-6 text-center relative z-10">
+            <span class="inline-block py-1 px-3 rounded-full bg-teal-800 text-teal-100 text-sm font-semibold mb-6 border border-teal-600">Sản phẩm Bảo hiểm Giáo dục Vi mô</span>
+            <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+                Chỉ từ vài nghìn đồng mỗi ngày, <br> <span class="text-yellow-300">đảm bảo hành trình học vấn của con</span>
             </h1>
-            <p class="text-lg md:text-xl font-light max-w-3xl mx-auto mb-8 leading-relaxed">
-                Giải pháp bảo vệ tài chính thiết kế riêng cho người lao động phổ thông. Với chi phí siêu nhỏ mỗi ngày, sản phẩm đảm bảo quỹ giáo dục lên đến 72 triệu đồng, giúp <strong>hành trình học vấn của con luôn được tiếp bước và không bao giờ bị gián đoạn</strong> trước bất kỳ biến cố nào.
+            <p class="text-lg md:text-xl font-light max-w-3xl mx-auto mb-10 leading-relaxed opacity-90">
+                Giải pháp dự phòng tài chính thông minh giúp bạn gạt bỏ nỗi lo âu. Cam kết chi trả quỹ giáo dục lên đến <strong>72.000.000 VNĐ</strong> để con yêu luôn được đến trường dù có bất kỳ rủi ro nào xảy ra.
             </p>
-            <a href="#calculator" class="bg-accent hover:bg-orange-600 text-white font-semibold py-3 px-8 rounded-full text-lg transition duration-300 inline-block shadow-md">
-                Tính Phí Bảo Hiểm Ngay
+            <a href="#calculator" class="bg-accent hover:bg-orange-600 text-white font-bold py-4 px-10 rounded-full text-lg transition duration-300 inline-block shadow-xl hover:shadow-2xl hover:-translate-y-1">
+                Xem mức phí của bạn ngay
             </a>
+            <p class="mt-4 text-sm text-teal-200">Không cần khám sức khỏe • Đăng ký trong 2 phút</p>
         </div>
     </header>
 
-    <section class="py-16 max-w-5xl mx-auto px-6">
-        <div class="text-center mb-12">
-            <h2 class="text-3xl font-bold text-primary mb-3">Quyền lợi Bảo hiểm (Tổng: 72 Triệu VNĐ)</h2>
-            <p class="text-gray-600">Hỗ trợ tài chính khẩn cấp và định kỳ nhằm đảm bảo quá trình học tập của con được xuyên suốt.</p>
+    <!-- Quyền lợi Section -->
+    <section class="py-20 max-w-5xl mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold text-gray-800 mb-4">Quyền lợi bảo vệ toàn diện</h2>
+            <div class="w-24 h-1 bg-accent mx-auto rounded"></div>
+            <p class="text-gray-600 mt-6 max-w-2xl mx-auto text-lg">Thiết kế dòng tiền tối ưu nhằm hỗ trợ gia đình vượt qua khó khăn ban đầu và duy trì việc học tập của con trong 5 năm tiếp theo.</p>
         </div>
 
         <div class="grid md:grid-cols-3 gap-8">
-            <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 text-center hover:shadow-lg transition duration-300">
-                <div class="w-16 h-16 mx-auto bg-teal-100 rounded-full flex items-center justify-center mb-4 text-primary text-2xl font-bold">1</div>
-                <h3 class="text-xl font-bold mb-2">Trợ cấp Khẩn cấp</h3>
-                <p class="text-3xl font-extrabold text-accent mb-2">20.000.000 đ</p>
+            <!-- Card 1 -->
+            <div class="bg-white p-8 rounded-2xl shadow-md border border-gray-100 text-center hover:shadow-xl transition duration-300 group">
+                <div class="w-20 h-20 mx-auto bg-teal-50 group-hover:bg-teal-100 rounded-full flex items-center justify-center mb-6 text-primary transition">
+                    <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                </div>
+                <h3 class="text-xl font-bold mb-3 text-gray-800">Trợ cấp Khẩn cấp</h3>
+                <p class="text-3xl font-extrabold text-primary mb-4">20 Triệu đ</p>
                 <p class="text-gray-600 text-sm leading-relaxed">
-                    <strong>Chi trả ngay lập tức</strong> khi Người được bảo hiểm qua đời. Khoản tiền này giúp gia đình ổn định cuộc sống và bù đắp thu nhập thiếu hụt trong thời gian đầu.
+                    <strong>Chi trả một lần ngay lập tức</strong> khi rủi ro xảy ra. Giúp gia đình ổn định cuộc sống và trang trải các chi phí cấp bách.
                 </p>
             </div>
-            <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 text-center hover:shadow-lg transition duration-300">
-                <div class="w-16 h-16 mx-auto bg-teal-100 rounded-full flex items-center justify-center mb-4 text-primary text-2xl font-bold">2</div>
-                <h3 class="text-xl font-bold mb-2">Giáo dục (Năm 1-3)</h3>
-                <p class="text-3xl font-extrabold text-accent mb-2">3.000.000 đ</p>
+            <!-- Card 2 -->
+            <div class="bg-white p-8 rounded-2xl shadow-md border border-gray-100 text-center hover:shadow-xl transition duration-300 group">
+                <div class="w-20 h-20 mx-auto bg-teal-50 group-hover:bg-teal-100 rounded-full flex items-center justify-center mb-6 text-primary transition">
+                    <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0v6m0 0l9-5m-9 5l-9-5"></path></svg>
+                </div>
+                <h3 class="text-xl font-bold mb-3 text-gray-800">Giáo dục (Năm 1-3)</h3>
+                <p class="text-3xl font-extrabold text-primary mb-4">3 Triệu đ/Quý</p>
                 <p class="text-gray-600 text-sm leading-relaxed">
-                    <strong>Chi trả mỗi quý (3 tháng/lần)</strong> liên tục trong 3 năm đầu sau biến cố. Đảm bảo nguồn tài chính định kỳ để trang trải học phí, sách vở cho con (Tổng: 36 triệu đ).
+                    <strong>Nhận đều đặn mỗi 3 tháng</strong> trong 3 năm đầu tiên. Đảm bảo học phí và sách vở cho con (Tổng chi trả: 36 triệu đ).
                 </p>
             </div>
-            <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 text-center hover:shadow-lg transition duration-300">
-                <div class="w-16 h-16 mx-auto bg-teal-100 rounded-full flex items-center justify-center mb-4 text-primary text-2xl font-bold">3</div>
-                <h3 class="text-xl font-bold mb-2">Giáo dục (Năm 4-5)</h3>
-                <p class="text-3xl font-extrabold text-accent mb-2">2.000.000 đ</p>
+            <!-- Card 3 -->
+            <div class="bg-white p-8 rounded-2xl shadow-md border border-gray-100 text-center hover:shadow-xl transition duration-300 group">
+                <div class="w-20 h-20 mx-auto bg-teal-50 group-hover:bg-teal-100 rounded-full flex items-center justify-center mb-6 text-primary transition">
+                    <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>
+                </div>
+                <h3 class="text-xl font-bold mb-3 text-gray-800">Giáo dục (Năm 4-5)</h3>
+                <p class="text-3xl font-extrabold text-primary mb-4">2 Triệu đ/Quý</p>
                 <p class="text-gray-600 text-sm leading-relaxed">
-                    <strong>Chi trả mỗi quý (3 tháng/lần)</strong> trong 2 năm tiếp theo. Việc chia nhỏ chi trả giúp gia đình quản lý tài chính hiệu quả và đúng mục tiêu giáo dục (Tổng: 16 triệu đ).
+                    <strong>Nhận đều đặn mỗi 3 tháng</strong> trong 2 năm tiếp theo, hỗ trợ con đến khi gia đình hoàn toàn tự chủ tài chính (Tổng: 16 triệu đ).
                 </p>
             </div>
         </div>
     </section>
 
-    <section class="py-12 bg-teal-50 border-y border-teal-100">
+    <!-- Calculator Section -->
+    <section id="calculator" class="bg-slate-100 py-20 border-t border-gray-200">
         <div class="max-w-5xl mx-auto px-6">
-            <h2 class="text-2xl font-bold text-primary mb-8 text-center">Điều khoản & Tiện ích sản phẩm</h2>
-            
-            <div class="grid md:grid-cols-2 gap-8">
-                <div class="bg-white p-6 rounded-xl shadow-sm">
-                    <h4 class="font-bold text-lg text-gray-800 mb-3 flex items-center">
-                        <span class="w-2 h-6 bg-accent mr-3 rounded"></span>
-                        Tiện ích tham gia
-                    </h4>
-                    <ul class="space-y-3 text-gray-700 text-sm">
-                        <li><strong>Chi phí siêu nhỏ (Micro-premium):</strong> Mức phí được tính toán tối ưu, chia nhỏ theo tuần hoặc tháng để phù hợp với thu nhập của lao động tự do.</li>
-                        <li><strong>Không cần khám sức khỏe:</strong> Quy trình thẩm định rút gọn, chỉ cần trả lời trung thực các câu hỏi sức khỏe cơ bản ngay trên ứng dụng.</li>
-                        <li><strong>Trích phí tự động:</strong> Hỗ trợ thanh toán tự động (Auto-deduct) từ các ví điện tử (MoMo, ZaloPay...) hoặc ứng dụng đối tác (Grab, Be).</li>
-                    </ul>
-                </div>
-
-                <div class="bg-white p-6 rounded-xl shadow-sm">
-                    <h4 class="font-bold text-lg text-gray-800 mb-3 flex items-center">
-                        <span class="w-2 h-6 bg-gray-500 mr-3 rounded"></span>
-                        Quy định cơ bản
-                    </h4>
-                    <ul class="space-y-3 text-gray-700 text-sm">
-                        <li><strong>Thời gian bảo vệ:</strong> Hợp đồng bảo vệ trong vòng 5 năm.</li>
-                        <li><strong>Thời gian chờ:</strong> Áp dụng thời gian chờ 90 ngày đối với các rủi ro do bệnh lý (Rủi ro do tai nạn được bảo vệ ngay lập tức).</li>
-                        <li><strong>Điều khoản loại trừ:</strong> Không áp dụng chi trả đối với các rủi ro do vi phạm pháp luật, vi phạm nồng độ cồn, sử dụng chất kích thích hoặc các trường hợp đã có sẵn trong quy tắc bảo hiểm.</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="calculator" class="bg-white py-16 border-t border-gray-200">
-        <div class="max-w-4xl mx-auto px-6">
-            <div class="text-center mb-10">
-                <h2 class="text-3xl font-bold text-primary mb-3">Dự toán Phí Bảo Hiểm</h2>
-                <p class="text-gray-600">Vui lòng nhập độ tuổi để xem mức đóng góp nhỏ gọn mỗi kỳ.</p>
-            </div>
-
-            <div class="bg-white rounded-3xl shadow-xl overflow-hidden flex flex-col md:flex-row border border-gray-100">
-                <div class="p-8 md:w-1/2 bg-gray-50">
+            <div class="bg-white rounded-3xl shadow-2xl overflow-hidden flex flex-col md:flex-row border border-gray-100">
+                
+                <!-- Left side: Form -->
+                <div class="p-10 md:w-1/2 bg-white">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-2">Xem ngay mức phí</h2>
+                    <p class="text-gray-500 mb-8">Hãy điền thông tin bên dưới để công cụ hệ thống tính toán mức phí tối ưu nhất dành riêng cho bạn.</p>
+                    
                     <form id="pricing-form" class="space-y-6">
                         <div>
-                            <label class="block text-sm font-medium text-gray-700 mb-1" for="dob">Ngày tháng năm sinh</label>
+                            <label class="block text-sm font-semibold text-gray-700 mb-2" for="dob">Ngày tháng năm sinh của bạn</label>
                             <input type="date" id="dob" required 
-                                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-teal-500 focus:border-teal-500 outline-none transition">
+                                class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary outline-none transition bg-slate-50 text-gray-800">
                         </div>
                         <div>
-                            <label class="block text-sm font-medium text-gray-700 mb-2">Giới tính</label>
+                            <label class="block text-sm font-semibold text-gray-700 mb-2">Giới tính sinh học</label>
                             <div class="flex gap-4">
                                 <label class="flex-1 cursor-pointer">
                                     <input type="radio" name="gender" value="nam" checked class="peer sr-only">
-                                    <div class="text-center py-3 border-2 border-gray-200 rounded-lg peer-checked:border-primary peer-checked:bg-teal-50 transition">Nam</div>
+                                    <div class="text-center py-3 border-2 border-gray-200 rounded-xl peer-checked:border-primary peer-checked:bg-teal-50 peer-checked:text-primary font-medium transition hover:bg-slate-50">Nam</div>
                                 </label>
                                 <label class="flex-1 cursor-pointer">
                                     <input type="radio" name="gender" value="nu" class="peer sr-only">
-                                    <div class="text-center py-3 border-2 border-gray-200 rounded-lg peer-checked:border-primary peer-checked:bg-teal-50 transition">Nữ</div>
+                                    <div class="text-center py-3 border-2 border-gray-200 rounded-xl peer-checked:border-primary peer-checked:bg-teal-50 peer-checked:text-primary font-medium transition hover:bg-slate-50">Nữ</div>
                                 </label>
                             </div>
                         </div>
                         <button type="button" onclick="handleCalculate()" 
-                            class="w-full bg-primary hover:bg-teal-700 text-white font-bold py-3 px-4 rounded-lg transition duration-300 shadow-md">
-                            Tính toán chi phí
+                            class="w-full bg-primary hover:bg-secondary text-white font-bold py-4 px-4 rounded-xl transition duration-300 shadow-lg text-lg mt-4">
+                            Tính toán chi phí ngay
                         </button>
                     </form>
                 </div>
 
-                <div class="p-8 md:w-1/2 flex flex-col justify-center items-center text-center">
-                    <div id="error-msg" class="hidden text-red-500 font-medium mb-4 px-4"></div>
+                <!-- Right side: Result -->
+                <div class="p-10 md:w-1/2 bg-teal-900 text-white flex flex-col justify-center relative overflow-hidden">
+                    <!-- Background pattern -->
+                    <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0); background-size: 20px 20px;"></div>
                     
-                    <div id="result-box" class="w-full">
-                        <h4 class="text-gray-500 font-medium mb-1" id="age-display">Độ tuổi tham gia: --</h4>
-                        <div class="mb-6 mt-4">
-                            <p class="text-sm text-gray-500 uppercase tracking-wide font-semibold">Phí đóng siêu nhỏ (Tuần)</p>
-                            <p class="text-4xl font-extrabold text-accent my-2" id="fee-weekly">0 đ</p>
-                            <p class="text-xs text-gray-400">Có thể trích tự động qua ví điện tử</p>
-                        </div>
-                        <div class="flex justify-between border-t border-gray-100 pt-6 mt-4 px-2">
-                            <div class="text-left">
-                                <p class="text-xs text-gray-500">Phí hàng tháng</p>
-                                <p class="font-bold text-gray-800 text-lg" id="fee-monthly">0 đ</p>
+                    <div class="relative z-10 text-center w-full">
+                        <div id="error-msg" class="hidden bg-red-500/20 text-red-100 border border-red-500/50 rounded-lg p-4 font-medium mb-4 text-sm"></div>
+                        
+                        <div id="result-box" class="w-full">
+                            <h4 class="text-teal-200 font-medium mb-2 text-lg" id="age-display">Hồ sơ tham gia: -- tuổi</h4>
+                            
+                            <div class="bg-white/10 rounded-2xl p-8 backdrop-blur-sm border border-white/20 mb-6 mt-4 shadow-inner">
+                                <p class="text-sm text-teal-100 uppercase tracking-wider font-semibold mb-2">Chỉ cần tiết kiệm mỗi tuần</p>
+                                <p class="text-5xl font-extrabold text-yellow-400 my-2 tracking-tight" id="fee-weekly">0 đ</p>
+                                <div class="mt-4 inline-flex items-center text-xs text-teal-100 bg-white/10 px-3 py-1.5 rounded-full">
+                                    <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                    Hỗ trợ trích nợ tự động (MoMo, ZaloPay)
+                                </div>
                             </div>
-                            <div class="text-right">
-                                <p class="text-xs text-gray-500">Phí hàng năm</p>
-                                <p class="font-bold text-gray-800 text-lg" id="fee-yearly">0 đ</p>
+                            
+                            <div class="flex justify-between border-t border-teal-700/50 pt-6 mt-2 px-4">
+                                <div class="text-left">
+                                    <p class="text-sm text-teal-300">Phí đóng hàng tháng</p>
+                                    <p class="font-bold text-white text-xl mt-1" id="fee-monthly">0 đ</p>
+                                </div>
+                                <div class="text-right">
+                                    <p class="text-sm text-teal-300">Phí đóng hàng năm</p>
+                                    <p class="font-bold text-white text-xl mt-1" id="fee-yearly">0 đ</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -157,25 +156,34 @@
         </div>
     </section>
 
-    <footer class="bg-gray-800 text-gray-400 py-8 text-center text-sm">
-        <p>&copy; 2026 The Martingales. <br> Các con số định phí mang tính minh họa theo mô hình cân bằng giá trị kỳ vọng.</p>
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-10 border-t border-gray-800">
+        <div class="max-w-5xl mx-auto px-6 text-center">
+            <p class="font-semibold text-gray-300 mb-2">Dự án An Tâm Học Vấn &copy; 2026</p>
+            <p class="text-sm max-w-2xl mx-auto">
+                Lưu ý: Mức phí được hiển thị trên hệ thống mang tính chất ước tính dựa trên thông tin độ tuổi và giới tính của bạn. Để nhận bảng minh họa chi tiết và chính xác nhất, vui lòng đăng ký tư vấn trực tiếp.
+            </p>
+        </div>
     </footer>
 
+    <!-- Logic xử lý (Không thay đổi các tính toán cốt lõi) -->
     <script>
+        // Bảng tỷ lệ tử vong CSO 1980 (Giữ nguyên)
         const cso1980_nam = [0.00263, 0.00103, 0.00099, 0.00097, 0.00093, 0.00088, 0.00083, 0.00078, 0.00075, 0.00074, 0.00075, 0.00081, 0.00092, 0.00107, 0.00124, 0.00142, 0.00159, 0.00172, 0.00182, 0.00188, 0.00190, 0.00190, 0.00188, 0.00184, 0.00180, 0.00175, 0.00172, 0.00171, 0.00170, 0.00172, 0.00175, 0.00180, 0.00187, 0.00195, 0.00205, 0.00217, 0.00232, 0.00249, 0.00268, 0.00290, 0.00315, 0.00342, 0.00371, 0.00403, 0.00437, 0.00473, 0.00512, 0.00553, 0.00597, 0.00646, 0.00700, 0.00763, 0.00833, 0.00913, 0.01001, 0.01096, 0.01197, 0.01304, 0.01418, 0.01542, 0.01680, 0.01836, 0.02012, 0.02209, 0.02427, 0.02662, 0.02913, 0.03179, 0.03465, 0.03781, 0.04137, 0.04543, 0.05008, 0.05534, 0.06110, 0.06725, 0.07370, 0.08037, 0.08732, 0.09476, 0.10294, 0.11209, 0.12241, 0.13384, 0.14612, 0.15898, 0.17221, 0.18573, 0.19953, 0.21369, 0.22843, 0.24411, 0.26143, 0.28213, 0.30997, 0.35186, 0.42099, 0.54100, 0.74515, 1.00000];
         
         const cso1980_nu = [0.00188, 0.00084, 0.00080, 0.00078, 0.00077, 0.00075, 0.00073, 0.00071, 0.00070, 0.00069, 0.00068, 0.00070, 0.00073, 0.00077, 0.00082, 0.00087, 0.00092, 0.00096, 0.00100, 0.00103, 0.00106, 0.00108, 0.00110, 0.00112, 0.00115, 0.00117, 0.00120, 0.00124, 0.00128, 0.00132, 0.00137, 0.00142, 0.00147, 0.00154, 0.00161, 0.00170, 0.00182, 0.00196, 0.00213, 0.00232, 0.00253, 0.00275, 0.00298, 0.00320, 0.00344, 0.00368, 0.00392, 0.00419, 0.00448, 0.00479, 0.00513, 0.00550, 0.00592, 0.00638, 0.00685, 0.00733, 0.00780, 0.00825, 0.00870, 0.00920, 0.00980, 0.01054, 0.01149, 0.01263, 0.01392, 0.01529, 0.01671, 0.01813, 0.01959, 0.02123, 0.02316, 0.02553, 0.02847, 0.03199, 0.03605, 0.04056, 0.04545, 0.05068, 0.05632, 0.06257, 0.06967, 0.07783, 0.08725, 0.09790, 0.10962, 0.12229, 0.13582, 0.15018, 0.16538, 0.18154, 0.19885, 0.21768, 0.23869, 0.26341, 0.29523, 0.34102, 0.41388, 0.53724, 0.74396, 1.00000];
 
         function formatVND(number) {
-            return Math.round(number).toLocaleString('vi-VN') + " đ";
+            return Math.round(number).toLocaleString('vi-VN') + " VNĐ";
         }
 
+        // Logic định phí (Giữ nguyên tuyệt đối)
         function calculateActuarialPricing(age, gender) {
             const n_years = 5;
             const i = 0.03;
             const v = 1 / (1 + i);
             const BF = 20000000, B1 = 3000000, B2 = 2000000;
-            const C0 = 50000, Cm = 20000, Cc = 100000;
+            const C0 = 20000, Cm = 5000, Cc = 20000;
             const alpha = 0.15, pi_margin = 0.15;
 
             const table = gender === 'nam' ? cso1980_nam : cso1980_nu;
@@ -223,18 +231,19 @@
             };
         }
 
+        // Xử lý sự kiện (DOM Updates)
         function handleCalculate() {
             const dobInput = document.getElementById('dob').value;
             const errorMsg = document.getElementById('error-msg');
             
             if (!dobInput) {
-                errorMsg.textContent = "Vui lòng nhập ngày sinh của bạn để hệ thống tính toán.";
+                errorMsg.textContent = "Vui lòng nhập ngày sinh của bạn để chúng tôi tính toán mức phí chính xác nhé.";
                 errorMsg.classList.remove('hidden');
                 return;
             }
 
             const dobDate = new Date(dobInput);
-            const today = new Date(); // Tính theo bối cảnh hiện tại
+            const today = new Date();
             let age = today.getFullYear() - dobDate.getFullYear();
             const m = today.getMonth() - dobDate.getMonth();
             if (m < 0 || (m === 0 && today.getDate() < dobDate.getDate())) {
@@ -242,9 +251,9 @@
             }
 
             if (age < 18 || age > 55) {
-                errorMsg.textContent = `Sản phẩm hiện tại được thiết kế dành cho độ tuổi từ 18 đến 55 tuổi (Độ tuổi của bạn: ${age}).`;
+                errorMsg.textContent = `Sản phẩm hiện tại được thiết kế dành cho khách hàng từ 18 đến 55 tuổi (Tuổi hiện tại của bạn: ${age}). Vui lòng để lại thông tin để tư vấn viên hỗ trợ gói khác nhé.`;
                 errorMsg.classList.remove('hidden');
-                document.getElementById('age-display').textContent = `Độ tuổi tham gia: --`;
+                document.getElementById('age-display').textContent = `Hồ sơ tham gia: -- tuổi`;
                 document.getElementById('fee-weekly').textContent = "0 đ";
                 document.getElementById('fee-monthly').textContent = "0 đ";
                 document.getElementById('fee-yearly').textContent = "0 đ";
@@ -255,7 +264,8 @@
             const gender = document.querySelector('input[name="gender"]:checked').value;
             const fees = calculateActuarialPricing(age, gender);
 
-            document.getElementById('age-display').textContent = `Độ tuổi tham gia: ${age} tuổi`;
+            // Cập nhật giao diện
+            document.getElementById('age-display').textContent = `Hồ sơ tham gia: ${age} tuổi`;
             document.getElementById('fee-weekly').textContent = formatVND(fees.weekly);
             document.getElementById('fee-monthly').textContent = formatVND(fees.monthly);
             document.getElementById('fee-yearly').textContent = formatVND(fees.yearly);
